@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+}
+
+.wrapper{
+    width: 800px;
+    height:800px;
+    margin: 0px auto;
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+.flex-div{
+    flex:1;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.cell{
+    background-color: red;
+    flex: 1 1 auto;
+}
