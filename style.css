@@ -12,9 +12,22 @@ body{
     border-radius: 20px;
 }
 
+.active-area{
+    display:flex;
+    flex-flow:row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin:40px;
+}
+
+.o-wrap{
+    flex: 7 1 auto;
+    padding-right: 10%;
+}
+
 .wrapper{
     width: 800px;
-    height:800px;
+    height: 800px;
     margin: 0px auto;
     display:flex;
     flex-flow: column nowrap;
@@ -29,27 +42,34 @@ body{
 }
 
 .cell{
-    background-color: red;
+    background-color: rgb(255, 255, 255);
     flex: 1 1 auto;
     /* margin:1px; */
 }
 
 .options{
-    height:55px;
-    padding:20px;
     display:flex;
-    flex-flow:row nowrap;
+    flex-flow:column nowrap;
     justify-content: space-around;
-    margin: 20px 0px;
-    /*background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(211,25,25,1) 50%, rgba(252,176,69,1) 100%);*/
+    gap:45px;
+    padding:20px;
+    border: 9px black double;
 }
 
 .opt{
-    font-size: 25px;
-    width:fit-content;
-    height:fit-content;
+    flex:1 1 auto;
+    font-size: 30px;
     border-radius: 20px;
-    border-style:ridge;
+    border:0.11em firebrick;
+    border-style:inset;
     background-color:lightgoldenrodyellow ;
-    /* color:white; */
+}
+
+.display{
+    font-size: 35px;
+    text-align: center;
+    background-color: fuchsia;
+    border-radius: 5px;
+    border:5px black groove;
+    
 }
